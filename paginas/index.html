@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilização.css">
+</head>
+<body>
+   <form action="blablabla.php" method="POST" enctype="multipart/form-data">
+
+    <input type="hidden" name="country" value="BR">
+
+   <fieldset>
+       <legend>Dados pessoais</legend>
+   <label>
+       nome completo <br>
+       <input type="text" name="name" required minlength="2" maxlength="">
+   </label><br>
+   <label>
+       sobrenome <br>
+       <input type="text" name="last name"required >
+   </label> <br>
+   <label>
+       Foto <br>
+       <input type="file" name="photo" accept="image/*" > 
+   </label>
+   </fieldset>
+
+   <fieldset>
+       <legend>Dados profissionais</legend>
+   <label>
+       nome da empresa <br>
+       <input type="text" name="companyname" >   
+    </label> <br>
+    <label>
+        cargo na empresa <br>
+        <input type="text" name="companyjobtitle">
+        
+    </label> <br>
+</fieldset>
+    <input type="submit" value="Cadastrar">
+</form>
+</body>
+</html>
